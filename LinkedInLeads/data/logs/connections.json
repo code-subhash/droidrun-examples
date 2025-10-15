@@ -1,0 +1,158 @@
+[
+    {
+        "timestamp": "2025-10-10T22:55:11.581117",
+        "company": {
+            "name": "Mentor Graphics",
+            "industry": "Software Development",
+            "location": "Wilsonville, OR",
+            "followers": "196K"
+        },
+        "role_searched": "Marketing Director",
+        "goal_intent": "Book demo calls",
+        "output": "{\n  \"connections_sent\": 1,\n  \"people_contacted\": [\"Vijay Chobisa - Product Marketing Director at Mentor Graphics\"],\n  \"messages_sent\": [\"Hi Vijay, I saw your Product Marketing Director role at Mentor Graphics. With Droidrun you can automate any mobile app. I'd love to connect and discuss booking a demo call.\"]\n}",
+        "success": true
+    },
+    {
+        "timestamp": "2025-10-10T22:57:27.864420",
+        "company": {
+            "name": "Blockchain Headhunter - Crypto & Web3 Recruitment",
+            "industry": "Blockchain Services",
+            "location": "Berlin, Berlin",
+            "followers": "140K"
+        },
+        "role_searched": "Marketing Director",
+        "goal_intent": "Book demo calls",
+        "output": "{\n  \"connections_sent\": 0,\n  \"people_contacted\": [],\n  \"messages_sent\": []\n}",
+        "success": true
+    },
+    {
+        "timestamp": "2025-10-10T22:59:41.089751",
+        "company": {
+            "name": "CTO Robotics",
+            "industry": "Broadcast Media Production and Distribution",
+            "location": "Istanbul",
+            "followers": "104K"
+        },
+        "role_searched": "Director of Marketing",
+        "goal_intent": "Book demo calls",
+        "output": "{\n  \"connections_sent\": 0,\n  \"people_contacted\": [],\n  \"messages_sent\": []\n}",
+        "success": true
+    },
+    {
+        "timestamp": "2025-10-10T22:59:53.000427",
+        "company": {
+            "name": "CTO Robotics",
+            "industry": "Broadcast Media Production and Distribution",
+            "location": "Istanbul",
+            "followers": "104K"
+        },
+        "role_searched": "CMO",
+        "goal_intent": "Book demo calls",
+        "output": "{\"connections_sent\": 0, \"people_contacted\": [], \"messages_sent\": []}",
+        "success": true
+    },
+    {
+        "timestamp": "2025-10-10T23:01:10.988506",
+        "company": {
+            "name": "CTO Robotics",
+            "industry": "Broadcast Media Production and Distribution",
+            "location": "Istanbul",
+            "followers": "104K"
+        },
+        "role_searched": "Chief Marketing Officer",
+        "goal_intent": "Book demo calls",
+        "output": "{\n  \"connections_sent\": 0,\n  \"people_contacted\": [],\n  \"messages_sent\": []\n}",
+        "success": true
+    },
+    {
+        "timestamp": "2025-10-10T23:02:40.184835",
+        "company": {
+            "name": "Lean Prinzip",
+            "industry": "Technology, Information and Internet",
+            "location": "Berlin, BE",
+            "followers": "177K"
+        },
+        "role_searched": "Marketing Director",
+        "goal_intent": "Book demo calls",
+        "output": "{\n  \"connections_sent\": 0,\n  \"people_contacted\": [],\n  \"messages_sent\": []\n}",
+        "success": true
+    },
+    {
+        "timestamp": "2025-10-10T23:02:54.552112",
+        "company": {
+            "name": "Lean Prinzip",
+            "industry": "Technology, Information and Internet",
+            "location": "Berlin, BE",
+            "followers": "177K"
+        },
+        "role_searched": "Director of Marketing",
+        "goal_intent": "Book demo calls",
+        "output": "{\n  \"connections_sent\": 0,\n  \"people_contacted\": [],\n  \"messages_sent\": []\n}",
+        "success": true
+    },
+    {
+        "timestamp": "2025-10-10T23:03:03.842464",
+        "company": {
+            "name": "Lean Prinzip",
+            "industry": "Technology, Information and Internet",
+            "location": "Berlin, BE",
+            "followers": "177K"
+        },
+        "role_searched": "CMO",
+        "goal_intent": "Book demo calls",
+        "output": "{\n  \"connections_sent\": 0,\n  \"people_contacted\": [],\n  \"messages_sent\": []\n}",
+        "success": true
+    },
+    {
+        "timestamp": "2025-10-10T23:04:40.728239",
+        "company": {
+            "name": "Lean Prinzip",
+            "industry": "Technology, Information and Internet",
+            "location": "Berlin, BE",
+            "followers": "177K"
+        },
+        "role_searched": "Chief Marketing Officer",
+        "goal_intent": "Book demo calls",
+        "output": "{ \"connections_sent\": 0, \"people_contacted\": [], \"messages_sent\": [] }",
+        "success": true
+    },
+    {
+        "timestamp": "2025-10-10T23:06:28.132678",
+        "company": {
+            "name": "Meeting C++ & more",
+            "industry": "IT Services and IT Consulting",
+            "location": "Berlin, Berlin",
+            "followers": "48K"
+        },
+        "role_searched": "Marketing Director",
+        "goal_intent": "Book demo calls",
+        "output": "{\n  \"connections_sent\": 0,\n  \"people_contacted\": [],\n  \"messages_sent\": []\n}",
+        "success": true
+    },
+    {
+        "timestamp": "2025-10-10T23:06:41.095714",
+        "company": {
+            "name": "Meeting C++ & more",
+            "industry": "IT Services and IT Consulting",
+            "location": "Berlin, Berlin",
+            "followers": "48K"
+        },
+        "role_searched": "Director of Marketing",
+        "goal_intent": "Book demo calls",
+        "output": "{\n  \"connections_sent\": 0,\n  \"people_contacted\": [],\n  \"messages_sent\": []\n}",
+        "success": true
+    },
+    {
+        "timestamp": "2025-10-10T23:06:52.093307",
+        "company": {
+            "name": "Meeting C++ & more",
+            "industry": "IT Services and IT Consulting",
+            "location": "Berlin, Berlin",
+            "followers": "48K"
+        },
+        "role_searched": "CMO",
+        "goal_intent": "Book demo calls",
+        "output": "{\n  \"connections_sent\": 0,\n  \"people_contacted\": [],\n  \"messages_sent\": []\n}",
+        "success": true
+    }
+]
