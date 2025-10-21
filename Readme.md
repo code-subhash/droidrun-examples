@@ -2,7 +2,9 @@
 
 A small collection of runnable, agent-driven Python projects. Each folder contains a focused workflow with its own entrypoint, data, and logs.
 
+
 ### Projects
+> Note: the examples given are based on droidrun version 0.4.0+. To see examples of older version see the `legacy/` folder.
 
 - **LinkedInJobsScraper**
 	- Agentic workflow that searches LinkedIn for roles, evaluates matches, and prepares tailored applications.
@@ -15,6 +17,8 @@ A small collection of runnable, agent-driven Python projects. Each folder contai
 - **TwitterPost**
 	- Finds trending topics, drafts posts, and generates images to publish on X/Twitter.
 	- Includes agents for trend mining, content creation, image generation, and posting, with example assets under `images/` and run logs in `trajectories/`.
+
+
 
 
 ### Learn More
