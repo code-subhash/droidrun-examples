@@ -1,12 +1,11 @@
 {
-    "target_audience": "Software startups marketing directors",
-    "industry": "Tech, Software",
-    "region": "Germany",
-    "company_size": "Startup (1-11 employees)",
+    "target_audience": "startup",
+    "industry": "software",
+    "region": "germany",
+    "company_size": "startup",
     "role_keywords": [
-        "CMO",
-        "Managing Directors"
+        "founder"
     ],
-    "goal_intent": "Book Demo Calls",
-    "about_yourself": "With Droidrun you can automate any mobile app. Grant AI native control of virtual & physical phones - Automate mobile workflows, unlock data, and more. Everything is possible through natural language."
+    "goal_intent": "book demo call",
+    "about_yourself": "we support startups"
 }

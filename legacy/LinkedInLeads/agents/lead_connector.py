@@ -3,13 +3,7 @@ import asyncio
 import os
 import json
 from datetime import datetime
-from droidrun import DroidAgent
-from droidrun.config_manager.config_manager import (
-    DroidrunConfig,
-    TracingConfig,
-    LoggingConfig,
-    AgentConfig,
-)
+from droidrun import AdbTools, DroidAgent
 from llama_index.llms.google_genai import GoogleGenAI
 from agents.prompts import prompts
 from agents.utils import append_to_csv
@@ -31,7 +25,9 @@ async def connect_with_leads(companies_file: str, user_config: dict):
         print("No companies found in the data file")
         return False
 
-    # Use default configuration with built-in LLM profiles
+    # Load tools
+    tools = AdbTools()
+    # set up google gemini llm
     llm = GoogleGenAI(
         api_key=os.environ["GEMINI_API_KEY"],
         model="gemini-2.5-pro",
@@ -53,15 +49,7 @@ async def connect_with_leads(companies_file: str, user_config: dict):
 
         for role in roles_to_search:
             try:
-                # Create configuration for this agent
-                config = DroidrunConfig(
-                    agent=AgentConfig(reasoning=True, max_steps=30),
-                    tracing=TracingConfig(enabled=False),
-                    logging=LoggingConfig(debug=True, save_trajectory="action"),
-                )
-
                 # Create agent for this specific company and role
-                # LLMs can also be automatically loaded from config.llm_profiles
                 agent = DroidAgent(
                     goal=prompts.LEAD_CONNECTOR_GOAL(
                         company_name=company.get("name", ""),
@@ -70,22 +58,27 @@ async def connect_with_leads(companies_file: str, user_config: dict):
                         about_yourself=user_config["about_yourself"],
                         user_config=user_config,
                     ),
-                    config=config,
-                    llms=llm,
+                    llm=llm,
+                    tools=tools,
+                    enable_tracing=True,
+                    save_trajectories="action",
+                    reasoning=True,
+                    vision=True,
+                    max_steps=30,
                 )
 
                 # Run agent
                 result = await agent.run()
                 print(
-                    f"🔍 Searching for {role} at {company.get('name', 'Unknown')}: {'✅' if result.success else '❌'}"
+                    f"🔍 Searching for {role} at {company.get('name', 'Unknown')}: {'✅' if result['success'] else '❌'}"
                 )
 
-                if result.success:
+                if result["success"]:
                     success_count += 1
 
                     # Log successful connection
                     await log_connection(
-                        company, role, user_config, result.output or ""
+                        company, role, user_config, result.get("output", "")
                     )
 
                 # Brief pause between searches to avoid overwhelming LinkedIn

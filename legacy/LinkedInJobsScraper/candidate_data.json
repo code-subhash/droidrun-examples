@@ -1,0 +1,22 @@
+{
+  "name": "John Doe",
+  "college": "MIT",
+  "currentLocation": "India",
+  "email": "testing@gmail.com",
+  "phone": "+1 8768548768",
+  "linkedin": "https://linkedin.com/johndoe",
+  "website": "johndoe.com",
+  "resumeContent": {
+    "education": [
+      "9.05 CPI in BTech Computer Science And Electronics from MIT"
+    ],
+    "experience": [
+      "Experience working at DroidRun as an ML engineer intern from may 2023 - july 2023"
+    ],
+    "projects": [
+      "SoulScript - AI Mental Health Therapist (GenAI): Built an AI mental health therapist with <1s audio latency using Gemini APIs, Google ADK, and Flask. Implemented RAG-driven persona reports on psychological literature, enabling personalized therapy for 90%+ users. Scaled multi-agent system to support 1000+ concurrent sessions with real-time conversational AI and adaptive therapeutic responses.",
+      "Fantasy Sports Score Prediction (ML): Developed an ANN-based cricket fantasy score predictor trained on 18,402 matches. Built interactive NextJS website with Three.js for team, match type, and date selection. Integrated Google Cloud for multilingual translation and text-to-speech in 15 Indian languages, ensuring accessibility and engagement for diverse cricket fans across platforms.",
+      "Two-Pass RISC Assembler and Emulator (C++): Designed a two-pass assembler in C++ to translate RISC assembly into machine code. Implemented symbol resolution, syntax/semantic validation, and accurate code generation. Built emulator to execute generated code with step-by-step register and memory tracking, providing insights for debugging and reinforcing strong understanding of low-level system programming and computer architecture."
+    ]
+  }
+}

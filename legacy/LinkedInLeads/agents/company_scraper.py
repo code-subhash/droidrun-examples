@@ -3,13 +3,7 @@ import asyncio
 import os
 import json
 from datetime import datetime
-from droidrun import DroidAgent
-from droidrun.config_manager.config_manager import (
-    DroidrunConfig,
-    TracingConfig,
-    LoggingConfig,
-    AgentConfig,
-)
+from droidrun import AdbTools, DroidAgent
 from llama_index.llms.google_genai import GoogleGenAI
 from agents.prompts import prompts
 from agents.utils import json_to_csv
@@ -24,19 +18,15 @@ async def scrape_companies(
     """
     Scrapes LinkedIn for companies matching the user's criteria
     """
-    # Use default configuration with built-in LLM profiles
+    # Load tools
+    tools = AdbTools()
+    # set up google gemini llm
     llm = GoogleGenAI(
         api_key=os.environ["GEMINI_API_KEY"],
         model="gemini-2.5-pro",
     )
-    config = DroidrunConfig(
-        agent=AgentConfig(reasoning=True, max_steps=75),
-        tracing=TracingConfig(enabled=False),
-        logging=LoggingConfig(debug=True, save_trajectory="action"),
-    )
 
     # Create agent
-    # LLMs can also be automatically loaded from config.llm_profiles
     agent = DroidAgent(
         goal=prompts.COMPANY_SCRAPER_GOAL(
             industry=user_config["industry"],
@@ -44,24 +34,26 @@ async def scrape_companies(
             company_size=user_config["company_size"],
             target_audience=user_config["target_audience"],
         ),
-        config=config,
-        llms=llm,
+        llm=llm,
+        tools=tools,
+        enable_tracing=True,
+        save_trajectories="action",
+        reasoning=True,
+        reflection=True,
+        vision=True,
+        max_steps=75,
     )
 
     # Run agent
     result = await agent.run()
+    print(f"Success: {result['success']}")
+    if result.get("output"):
+        print(f"Output: {result['output']}")
 
-    # Check results (result is a ResultEvent object)
-    print(f"Success: {result.success}")
-    print(f"Reason: {result.reason}")
-    print(f"Steps: {result.steps}")
-    if result.output:
-        print(f"Output: {result.output}")
-
-    if result.success and result.output:
+    if result["success"] and result.get("output"):
         # Parse the JSON output
         try:
-            companies_data = json.loads(result.output)
+            companies_data = json.loads(result["output"])
 
             # Create output directory
             os.makedirs(output_directory, exist_ok=True)
