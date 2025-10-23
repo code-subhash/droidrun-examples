@@ -18,6 +18,9 @@ A small collection of runnable, agent-driven Python projects. Each folder contai
 	- Finds trending topics, drafts posts, and generates images to publish on X/Twitter.
 	- Includes agents for trend mining, content creation, image generation, and posting, with example assets under `images/` and run logs in `trajectories/`.
 
+- **play2048**
+	- Automated agent that plays the 2048 game on play2048.co, attempting to reach the 2048 tile using strategic reasoning and decision-making.
+
 
 
 

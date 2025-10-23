@@ -1,0 +1,2 @@
+droidrun
+llama-index-llms-google-genai
