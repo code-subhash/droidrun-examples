@@ -1,0 +1,4 @@
+colorama
+droidrun
+llama-index-llms-google-genai
+python-dotenv

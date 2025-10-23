@@ -1,0 +1,240 @@
+[
+  {
+    "index": 1,
+    "resourceId": "",
+    "className": "FrameLayout",
+    "text": "FrameLayout",
+    "bounds": "0, 0, 1080, 2340",
+    "children": [
+      {
+        "index": 2,
+        "resourceId": "",
+        "className": "FrameLayout",
+        "text": "FrameLayout",
+        "bounds": "0, 91, 1080, 2214",
+        "children": [
+          {
+            "index": 3,
+            "resourceId": "com.android.chrome:id/feed_stream_recycler_view",
+            "className": "RecyclerView",
+            "text": "feed_stream_recycler_view",
+            "bounds": "0, 91, 1080, 2214",
+            "children": [
+              {
+                "index": 4,
+                "resourceId": "",
+                "className": "FrameLayout",
+                "text": "FrameLayout",
+                "bounds": "42, 91, 1038, 1049",
+                "children": [
+                  {
+                    "index": 5,
+                    "resourceId": "com.android.chrome:id/search_box_text",
+                    "className": "EditText",
+                    "text": "Search Google or type URL",
+                    "bounds": "189, 459, 754, 627",
+                    "children": []
+                  },
+                  {
+                    "index": 6,
+                    "resourceId": "com.android.chrome:id/voice_search_button",
+                    "className": "ImageView",
+                    "text": "Start voice search",
+                    "bounds": "754, 480, 880, 606",
+                    "children": []
+                  },
+                  {
+                    "index": 7,
+                    "resourceId": "com.android.chrome:id/lens_camera_button",
+                    "className": "ImageView",
+                    "text": "Search with your camera using Google Lens",
+                    "bounds": "880, 480, 1006, 606",
+                    "children": []
+                  },
+                  {
+                    "index": 8,
+                    "resourceId": "com.android.chrome:id/mv_tiles_container",
+                    "className": "HorizontalScrollView",
+                    "text": "mv_tiles_container",
+                    "bounds": "42, 690, 1038, 1007",
+                    "children": [
+                      {
+                        "index": 9,
+                        "resourceId": "",
+                        "className": "FrameLayout",
+                        "text": "Google News: news.google.com",
+                        "bounds": "74, 735, 284, 949",
+                        "children": [
+                          {
+                            "index": 10,
+                            "resourceId": "com.android.chrome:id/tile_view_title",
+                            "className": "TextView",
+                            "text": "Google News",
+                            "bounds": "85, 900, 273, 949",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "index": 11,
+                        "resourceId": "",
+                        "className": "FrameLayout",
+                        "text": "LinkedIn: www.linkedin.com",
+                        "bounds": "288, 735, 498, 949",
+                        "children": [
+                          {
+                            "index": 12,
+                            "resourceId": "com.android.chrome:id/offline_badge",
+                            "className": "ImageView",
+                            "text": "Available offline",
+                            "bounds": "421, 753, 463, 795",
+                            "children": []
+                          },
+                          {
+                            "index": 13,
+                            "resourceId": "com.android.chrome:id/tile_view_title",
+                            "className": "TextView",
+                            "text": "LinkedIn",
+                            "bounds": "332, 900, 454, 949",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "index": 14,
+                        "resourceId": "",
+                        "className": "FrameLayout",
+                        "text": "Instagram: www.instagram.com",
+                        "bounds": "502, 735, 712, 949",
+                        "children": [
+                          {
+                            "index": 15,
+                            "resourceId": "com.android.chrome:id/tile_view_title",
+                            "className": "TextView",
+                            "text": "Instagram",
+                            "bounds": "534, 900, 681, 949",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "index": 16,
+                        "resourceId": "",
+                        "className": "FrameLayout",
+                        "text": "Codeforces: codeforces.com",
+                        "bounds": "716, 735, 926, 949",
+                        "children": [
+                          {
+                            "index": 17,
+                            "resourceId": "com.android.chrome:id/tile_view_title",
+                            "className": "TextView",
+                            "text": "Codeforces",
+                            "bounds": "736, 900, 907, 949",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "index": 18,
+                        "resourceId": "",
+                        "className": "FrameLayout",
+                        "text": "Shushhhhhh: shush01.vercel.app",
+                        "bounds": "930, 735, 1038, 949",
+                        "children": [
+                          {
+                            "index": 19,
+                            "resourceId": "com.android.chrome:id/tile_view_title",
+                            "className": "TextView",
+                            "text": "Shushhhhhh",
+                            "bounds": "946, 900, 1038, 949",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "index": 20,
+                "resourceId": "",
+                "className": "FrameLayout",
+                "text": "FrameLayout",
+                "bounds": "42, 1049, 1038, 1147",
+                "children": [
+                  {
+                    "index": 21,
+                    "resourceId": "",
+                    "className": "LinearLayout",
+                    "text": "LinearLayout",
+                    "bounds": "42, 1049, 1038, 1147",
+                    "children": [
+                      {
+                        "index": 22,
+                        "resourceId": "com.android.chrome:id/header_title",
+                        "className": "TextView",
+                        "text": "Discover – off",
+                        "bounds": "84, 1091, 326, 1147",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "index": 23,
+        "resourceId": "com.android.chrome:id/toolbar_container",
+        "className": "ViewGroup",
+        "text": "toolbar_container",
+        "bounds": "0, 91, 1080, 241",
+        "children": [
+          {
+            "index": 24,
+            "resourceId": "com.android.chrome:id/toolbar",
+            "className": "FrameLayout",
+            "text": "toolbar",
+            "bounds": "0, 91, 1080, 238",
+            "children": [
+              {
+                "index": 25,
+                "resourceId": "com.android.chrome:id/home_button",
+                "className": "ImageButton",
+                "text": "Open the homepage",
+                "bounds": "0, 91, 126, 238",
+                "children": []
+              },
+              {
+                "index": 26,
+                "resourceId": "com.android.chrome:id/optional_toolbar_button",
+                "className": "ImageButton",
+                "text": "Signed in as Hemant Kumar. ytbhemant@gmail.com. Opens settings.",
+                "bounds": "691, 91, 828, 238",
+                "children": []
+              },
+              {
+                "index": 27,
+                "resourceId": "com.android.chrome:id/tab_switcher_button",
+                "className": "ImageButton",
+                "text": "See 1 tab",
+                "bounds": "828, 91, 954, 238",
+                "children": []
+              },
+              {
+                "index": 28,
+                "resourceId": "com.android.chrome:id/menu_button",
+                "className": "ImageButton",
+                "text": "Customise and control Google Chrome",
+                "bounds": "954, 91, 1080, 238",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
